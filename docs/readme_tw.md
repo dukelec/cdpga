@@ -11,7 +11,7 @@ FPGA ICE40UL1K-CM36A 最小系統板
 ## 介紹
 
 CDCTL_BX_E 爲 Lattice 之 iCE40 UL 系列 FPGA (ICE40UL1K-CM36A) 最小系統板，（爲 CDCTL_BX 匯流排控製器未燒寫版本，後綴 `E` 代表 `Empty`），板上資源含有：
- - 引出 12 個 IO 口（其中 4 個與配置口復用）；
+ - 引出 12 個 IO 埠（其中 4 個與配置埠復用）；
  - 16 M 時鐘，可經內部 PLL 輸出更高頻率；
  - 只需外部供電 3.3 V 即可使用。
 
@@ -92,6 +92,6 @@ iCEcube2 中包含的 Active-HDL 模擬工具僅存在於 Windows 版本，具�
 
 ## 相關資料
  - [原理圖](files/cdctl_bx_sch.pdf)
- - [位置圖](files/component.png)
+ - [位置圖](files/cdctl_bx_component.png)
 
 
