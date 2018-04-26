@@ -13,7 +13,8 @@
 *.pyc
 *.vvp
 
-/cdctl_bx_e/
+/cdpga_bx.vcd
+/results.xml
 
 #
 # git files that we don't want to ignore even it they are dot-files

@@ -4,7 +4,7 @@
 `define cycle (1000000000.0/`frequency) //clock period (nS)
 
 
-module cdctl_bx_e_tb;
+module cdpga_bx_tb;
 
 reg clk;
 reg rx;
@@ -51,7 +51,7 @@ begin
 end
 
 
-cdctl_bx_e cdctl_bx_e_m(
+cdpga_bx cdpga_bx_m(
           .clk_i(clk),
 
           .rx(rx),
@@ -60,7 +60,7 @@ cdctl_bx_e cdctl_bx_e_m(
       );
 
 initial begin
-    $dumpfile("cdctl_bx_e.vcd");
+    $dumpfile("cdpga_bx.vcd");
     $dumpvars();
 end
 

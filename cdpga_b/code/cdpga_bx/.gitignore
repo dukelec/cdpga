@@ -1,0 +1,6 @@
+
+*.pyc
+*.vvp
+
+/cdpga_bx/
+

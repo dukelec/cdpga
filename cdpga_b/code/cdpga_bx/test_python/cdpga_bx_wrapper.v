@@ -11,7 +11,7 @@
 
 `timescale 1 ns / 1 ps
 
-module cdctl_bx_e_wrapper(
+module cdpga_bx_wrapper(
         input       clk,
         input       rx
     );
@@ -19,7 +19,7 @@ module cdctl_bx_e_wrapper(
 wire tx;
 wire tx_en;
 
-cdctl_bx_e cdctl_bx_e_m(
+cdpga_bx cdpga_bx_m(
           .clk_i(clk),
 
           .rx(rx),
@@ -28,7 +28,7 @@ cdctl_bx_e cdctl_bx_e_m(
       );
 
 initial begin
-    $dumpfile("cdctl_bx_e.vcd");
+    $dumpfile("cdpga_bx.vcd");
     $dumpvars();
 end
 

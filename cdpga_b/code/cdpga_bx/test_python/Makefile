@@ -12,11 +12,11 @@
 #   $ COCOTB=/path/to/cocotb make
 
 CDCTL_HDL = $(PWD)/..
-VERILOG_SOURCES = $(PWD)/cdctl_bx_e_wrapper.v \
-                  $(CDCTL_HDL)/cdctl_bx_e.v
+VERILOG_SOURCES = $(PWD)/cdpga_bx_wrapper.v \
+                  $(CDCTL_HDL)/cdpga_bx.v
 
-TOPLEVEL = cdctl_bx_e_wrapper
-MODULE = test_cdctl_bx_e
+TOPLEVEL = cdpga_bx_wrapper
+MODULE = test_cdpga_bx
 include $(COCOTB)/makefiles/Makefile.inc
 include $(COCOTB)/makefiles/Makefile.sim
 

@@ -1,6 +1,6 @@
 // Author: Duke Fong
 
-module cdctl_bx_e(
+module cdpga_bx(
     input       clk_i,
     output      clk_o,
 

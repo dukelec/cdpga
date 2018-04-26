@@ -19,11 +19,11 @@ CLK_PERIOD = 1000000000000 / CLK_FREQ
 
 
 @cocotb.test()
-def test_cdctl_bx_e(dut):
+def test_cdpga_bx(dut):
     """
-    test_cdctl_bx_e
+    test_cdpga_bx
     """
-    dut._log.info("test_cdctl_bx_e start.")
+    dut._log.info("test_cdpga_bx start.")
     dut.rx = 0
 
     cocotb.fork(Clock(dut.clk, CLK_PERIOD).start())
@@ -45,5 +45,5 @@ def test_cdctl_bx_e(dut):
     dut.rx = 1;
     
     yield Timer(5000000)
-    dut._log.info("test_cdctl_bx done.")
+    dut._log.info("test_cdpga_bx done.")
 

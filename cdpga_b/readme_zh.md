@@ -10,7 +10,7 @@ FPGA ICE40UL1K-CM36A 最小系統板
 
 ## 介紹
 
-CDCTL_BX_E 爲 Lattice 之 iCE40 UL 系列 FPGA (ICE40UL1K-CM36A) 最小系統板，（爲 CDCTL_BX 匯流排控製器未燒寫版本，後綴 `E` 代表 `Empty`），板上資源含有：
+CDPGA_BX 爲 Lattice 之 iCE40 UL 系列 FPGA (ICE40UL1K-CM36A) 最小系統板（爲 CDCTL_BX 匯流排控製器未燒寫版本），板上資源含有：
  - 引出 12 個 IO 埠（其中 4 個與配置埠復用）；
  - 16 M 時鐘，可經內部 PLL 輸出更高頻率；
  - 只需外部供電 3.3 V 即可使用。
@@ -59,9 +59,10 @@ Lattice 器件使用較爲便捷：
 具體接線方式請參考器件相關資料，譬如：`iCE40 Ultra Breakout Board Users Guide`.
 
 <img src="img/c1 connect device.jpg" width="80%">
-<img src="img/c2 open programmer.png" width="40%">
-<img src="img/c3 select mode.png" width="80%">
-<img src="img/c4 programming.png" width="80%">
+<img src="img/c2 wiring.jpg" width="80%">
+<img src="img/c3 open programmer.png" width="40%">
+<img src="img/c4 select mode.png" width="80%">
+<img src="img/c5 programming.png" width="80%">
 
 Linux 用家需要把 ftdi_sio driver 屏蔽，否則會把 FT232H 默認識別爲串口：
 ```sh
