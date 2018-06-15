@@ -1,6 +1,9 @@
 
 *.pyc
 *.vvp
+*.vcd
+*.bak
 
-/cdpga_bx/
+/cdpga_bx/cdpga_bx_Implmnt/
+/cdpga_bx/*.log
 

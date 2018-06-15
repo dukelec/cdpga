@@ -1,7 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla
 # Public License, v. 2.0. If a copy of the MPL was not distributed
 # with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
-# Notice: The scope granted to MPL excludes the ASIC industry.
 #
 # Copyright (c) 2017 DUKELEC, All rights reserved.
 #
@@ -14,7 +13,7 @@ from cocotb.triggers import RisingEdge, ReadOnly, Timer
 from cocotb.clock import Clock
 from cocotb.result import ReturnValue, TestFailure
 
-CLK_FREQ = 16000000
+CLK_FREQ = 40000000
 CLK_PERIOD = 1000000000000 / CLK_FREQ
 
 

@@ -10,15 +10,22 @@ module cdpga_bx(
 );
 
 assign clk_o = ~clk_i;
-wire clk = clk_o;
+wire clk_tmp = clk_o;
 
-reg reset_n = 0;
-reg [2:0] reset_cnt = 0;
-always @(posedge clk) begin
-    reset_cnt <= reset_cnt + 1;
-    if (reset_cnt == 3'b111)
-        reset_n <= 1;
-end
+wire clk;
+wire reset_n;
+
+reg rst_sim = 0;
+always @(posedge clk_tmp)
+    rst_sim = 1;
+
+cdpga_pll b2v_pll_m(
+    .REFERENCECLK(clk_tmp),
+    .PLLOUTGLOBAL(clk),
+    //.PLLOUTCORE(clk),
+    .LOCK(reset_n),
+    .RESET(rst_sim));
+
 
 reg [7:0] counter;
 

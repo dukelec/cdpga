@@ -1,6 +1,6 @@
 `timescale 1 ns / 1 ps
 
-`define frequency 16000000 //(Hz)
+`define frequency 40000000 //(Hz)
 `define cycle (1000000000.0/`frequency) //clock period (nS)
 
 
@@ -48,6 +48,9 @@ begin
     #20000;
     rx = 1;
     $display($time, " tx: %b, tx_en: %b", tx, tx_en);
+    
+    #20000;
+    $finish;
 end
 
 
