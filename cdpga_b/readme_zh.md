@@ -95,4 +95,8 @@ iCEcube2 中包含的 Active-HDL 模擬工具僅存在於 Windows 版本，具�
  - [原理圖](files/cdctl_bx_sch.pdf)
  - [位置圖](files/cdctl_bx_component.png)
 
+### 尺寸圖
+
+<img src="files/cdctl_b1_dimension.svg" style="max-width:100%">
+
 
