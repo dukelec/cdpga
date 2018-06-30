@@ -1,6 +1,8 @@
 Altera MAX10 FPGA 10M02DCV36 Tiny Core Board
 =======================================
 
+<img src="img/cdctl-h2.jpg" style="max-width:100%">
+
 ### Dimensions
 
 <img src="files/cdctl_h2_dimension.svg" style="max-width:100%">
