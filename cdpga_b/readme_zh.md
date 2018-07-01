@@ -59,7 +59,7 @@ Lattice 器件使用較爲便捷：
 具體接線方式請參考器件相關資料，譬如：`iCE40 Ultra Breakout Board Users Guide`.
 
 <img src="img/c1 connect device.jpg" width="80%">
-<img src="img/c2 wiring.jpg" width="80%">
+<img src="img/c2 wiring.svg" width="80%">
 <img src="img/c3 open programmer.png" width="40%">
 <img src="img/c4 select mode.png" width="80%">
 <img src="img/c5 programming.png" width="80%">
@@ -71,6 +71,16 @@ $ sudo mv ftdi_sio.ko ftdi_sio.ko.bk
 $ sudo rmmod ftdi_sio
 ```
 
+#### 配置外部 Flash
+
+按下圖接好線，打開燒錄工具，會提示掃描失敗，因爲工具不支持自動識別 FLASH 芯片，所以要分別手動點擊 "Device Family" 和 "Device" 選擇 FPGA 型號，
+然後雙擊 "Operation" 在彈出菜單中選擇 SPI Flash Programming, 並選擇 Hex 文件和 Flash 芯片型號，確認返回主界面即可進行燒錄。
+
+<img src="img/d1 wiring.svg" width="80%">
+
+<img src="img/d2.png" width="80%">
+<img src="img/d3.png" width="80%">
+
 ### 模擬測試
 你可以使用自己習慣的模擬方式和工具，譬如你可以直接使用 ModelSim, 或者通過 Quartus, ISE 等 IDE 來測試代碼之功能。
 這裡僅給出我偏好的方式和官方提供的方式。
@@ -81,7 +91,7 @@ $ sudo rmmod ftdi_sio
 $ COCOTB=/path/to/cocotb make
 ```
 最後通過 GTKWave 查看輸出的波形檔案：
-<img src="img/d1 cocotb.png" width="100%">
+<img src="img/e1 cocotb.png" width="100%">
 修改代碼再次模擬執行後，只需點擊 GTKWave 的 Reload 按鈕即可更新視窗。
 
 關於 cocotb 具體用法請自行前往其項目專頁查閱相關文檔。
