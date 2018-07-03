@@ -1,6 +1,10 @@
 Altera MAX10 FPGA 10M02DCV36 Tiny Core Board
 =======================================
 
+**Warn:**  
+Sorry, the current version (H2) of the clock input is not a dedicated clock pin and the PLL cannot be used. We will modify it immediately.  
+Work around: externally connected clock signal and dedicated clock input pin (e.g. R12_N).
+
 <img src="img/cdctl-h2.jpg" style="max-width:100%">
 
 ### Dimensions
