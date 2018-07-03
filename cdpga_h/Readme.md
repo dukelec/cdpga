@@ -15,10 +15,13 @@ Work around: externally connected clock signal and dedicated clock input pin (e.
 ### Schematic
 
  - [cdctl_h2_schematic.pdf](files/cdctl_h2_schematic.pdf)
+ - [cdctl_h3_schematic.pdf](files/cdctl_h3_schematic.pdf)
 
 ### Components
 
 <img src="files/cdctl_h2_component.png" style="max-width:100%">
+
+ - [cdctl_h3_component.png](files/cdctl_h3_component.png)
 
 ### Differential Pairs Length
 
