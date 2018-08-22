@@ -6,8 +6,7 @@ Support devices: EP4CGX15BF14/EP4CGX30BF14 (default: EP4CGX15BF14C8N)
 
 Connector model: SM20B-SURS-TF (x2 pcs)
 
-<img src="img/cdctl-p1.jpg" style="max-width:100%">
-
+<img src="img/cdctl-p1-top.jpg" width="444px"> <img src="img/cdctl-p1-bottom.jpg" width="444px">
 
 ### Schematic and PCB
 
