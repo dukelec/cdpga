@@ -33,3 +33,9 @@ Note: The vias under BGA are non-conductive filled.
  - R12: 3.192 mm
  - R10: 2.419 mm
 
+
+## Add Pin Headers
+
+<img src="img/half-holes-with-pin-headers.jpg" style="max-width:100%">
+
+Details: http://blog.dukelec.com/solder-half-holes-pcb-with-pin-headers

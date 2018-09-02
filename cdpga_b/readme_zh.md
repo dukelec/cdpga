@@ -110,3 +110,9 @@ iCEcube2 中包含的 Active-HDL 模擬工具僅存在於 Windows 版本，具�
 <img src="files/cdctl_b1_dimension.svg" style="max-width:100%">
 
 
+### 焊接方法
+
+除了上面人头板的 CDBITE 免焊接咬合方式：https://github.com/dukelec/cdbus_doc/tree/master/cdbite
+
+还可以直接焊接排针，做成可以插拔的方式：http://blog.dukelec.com/solder-half-holes-pcb-with-pin-headers
+
