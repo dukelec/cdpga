@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element pcie_ip
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element pio_0
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="AUTO" />
+ <parameter name="device" value="EP4CGX15BF14C8" />
+ <parameter name="deviceFamily" value="Cyclone IV GX" />
+ <parameter name="deviceSpeedGrade" value="8" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="2" />
+ <parameter name="projectName" value="cdctl_pcie.qpf" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface
+   name="pcie_ip_cal_blk_clk"
+   internal="pcie_ip.cal_blk_clk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="pcie_ip_clocks_sim"
+   internal="pcie_ip.clocks_sim"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pcie_ip_fixedclk"
+   internal="pcie_ip.fixedclk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="pcie_ip_pcie_rstn"
+   internal="pcie_ip.pcie_rstn"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pcie_ip_pipe_ext"
+   internal="pcie_ip.pipe_ext"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pcie_ip_powerdown"
+   internal="pcie_ip.powerdown"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pcie_ip_reconfig_busy"
+   internal="pcie_ip.reconfig_busy"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pcie_ip_reconfig_fromgxb_0"
+   internal="pcie_ip.reconfig_fromgxb_0"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pcie_ip_reconfig_gxbclk"
+   internal="pcie_ip.reconfig_gxbclk"
+   type="clock"
+   dir="end" />
+ <interface
+   name="pcie_ip_reconfig_togxb"
+   internal="pcie_ip.reconfig_togxb"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pcie_ip_refclk"
+   internal="pcie_ip.refclk"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pcie_ip_rx_in"
+   internal="pcie_ip.rx_in"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pcie_ip_test_in"
+   internal="pcie_ip.test_in"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pcie_ip_test_out"
+   internal="pcie_ip.test_out"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pcie_ip_tx_out"
+   internal="pcie_ip.tx_out"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pio_0_external_connection"
+   internal="pio_0.external_connection"
+   type="conduit"
+   dir="end" />
+ <module name="pcie_ip" kind="altera_pcie_hard_ip" version="18.0" enabled="1">
+  <parameter name="AST_LITE" value="0" />
+  <parameter name="AUTO_CAL_BLK_CLK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_CAL_BLK_CLK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_CAL_BLK_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_DEVICE" value="EP4CGX15BF14C8" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="8" />
+  <parameter name="BAR Type">32 bit Non-Prefetchable,Not used,Not used,Not used,Not used,Not used</parameter>
+  <parameter name="CB_A2P_ADDR_MAP_IS_FIXED" value="1" />
+  <parameter name="CB_A2P_ADDR_MAP_NUM_ENTRIES" value="1" />
+  <parameter name="CB_A2P_ADDR_MAP_PASS_THRU_BITS" value="20" />
+  <parameter name="CB_P2A_FIXED_AVALON_ADDR_B0" value="0" />
+  <parameter name="CB_P2A_FIXED_AVALON_ADDR_B1" value="0" />
+  <parameter name="CB_P2A_FIXED_AVALON_ADDR_B2" value="0" />
+  <parameter name="CB_P2A_FIXED_AVALON_ADDR_B3" value="0" />
+  <parameter name="CB_P2A_FIXED_AVALON_ADDR_B4" value="0" />
+  <parameter name="CB_P2A_FIXED_AVALON_ADDR_B5" value="0" />
+  <parameter name="CB_PCIE_MODE" value="1" />
+  <parameter name="CB_PCIE_RX_LITE" value="1" />
+  <parameter name="CB_TXS_ADDRESS_WIDTH" value="7" />
+  <parameter name="CG_AVALON_S_ADDR_WIDTH" value="20" />
+  <parameter name="CG_COMMON_CLOCK_MODE" value="1" />
+  <parameter name="CG_ENABLE_A2P_INTERRUPT" value="0" />
+  <parameter name="CG_IMPL_CRA_AV_SLAVE_PORT" value="0" />
+  <parameter name="CG_IRQ_BIT_ENA" value="65535" />
+  <parameter name="CG_NO_CPL_REORDERING" value="0" />
+  <parameter name="CG_RXM_IRQ_NUM" value="16" />
+  <parameter name="G_TAG_NUM0" value="32" />
+  <parameter name="INTENDED_DEVICE_FAMILY" value="Cyclone IV GX" />
+  <parameter name="NUM_PREFETCH_MASTERS" value="1" />
+  <parameter name="PCIe Address 31:0">0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000</parameter>
+  <parameter name="PCIe Address 63:32">0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000</parameter>
+  <parameter name="RH_NUM" value="7" />
+  <parameter name="RXM_BEN_WIDTH" value="8" />
+  <parameter name="RXM_DATA_WIDTH" value="64" />
+  <parameter name="RX_BUF" value="9" />
+  <parameter name="SLAVE_ADDRESS_MAP_0" value="5" />
+  <parameter name="SLAVE_ADDRESS_MAP_1" value="0" />
+  <parameter name="SLAVE_ADDRESS_MAP_1_0" value="0" />
+  <parameter name="SLAVE_ADDRESS_MAP_2" value="0" />
+  <parameter name="SLAVE_ADDRESS_MAP_3" value="0" />
+  <parameter name="SLAVE_ADDRESS_MAP_3_2" value="0" />
+  <parameter name="SLAVE_ADDRESS_MAP_4" value="0" />
+  <parameter name="SLAVE_ADDRESS_MAP_5" value="0" />
+  <parameter name="SLAVE_ADDRESS_MAP_5_4" value="0" />
+  <parameter name="TL_SELECTION" value="1" />
+  <parameter name="advanced_errors" value="false" />
+  <parameter name="bar0_io_space" value="false" />
+  <parameter name="bar1_io_space" value="false" />
+  <parameter name="bar2_io_space" value="false" />
+  <parameter name="bar3_io_space" value="false" />
+  <parameter name="bar4_io_space" value="false" />
+  <parameter name="bar5_io_space" value="false" />
+  <parameter name="bar_io_window_size" value="32BIT" />
+  <parameter name="bar_prefetchable" value="32" />
+  <parameter name="bypass_tl" value="false" />
+  <parameter name="class_code" value="0" />
+  <parameter name="completion_timeout" value="NONE" />
+  <parameter name="credit_buffer_allocation_aux" value="ABSOLUTE" />
+  <parameter name="deviceFamily" value="Cyclone IV GX" />
+  <parameter name="device_id" value="4" />
+  <parameter name="diffclock_nfts_count" value="255" />
+  <parameter name="dll_active_report_support" value="false" />
+  <parameter name="eie_before_nfts_count" value="4" />
+  <parameter name="enable_adapter_half_rate_mode" value="false" />
+  <parameter name="enable_completion_timeout_disable" value="false" />
+  <parameter name="enable_coreclk_out_half_rate" value="false" />
+  <parameter name="enable_ecrc_check" value="false" />
+  <parameter name="enable_ecrc_gen" value="false" />
+  <parameter name="enable_function_msix_support" value="false" />
+  <parameter name="enable_l1_aspm" value="false" />
+  <parameter name="enable_msi_64bit_addressing" value="true" />
+  <parameter name="enable_slot_register" value="false" />
+  <parameter name="endpoint_l0_latency" value="0" />
+  <parameter name="endpoint_l1_latency" value="0" />
+  <parameter name="fixed_address_mode" value="0" />
+  <parameter name="gen2_diffclock_nfts_count" value="255" />
+  <parameter name="gen2_sameclock_nfts_count" value="255" />
+  <parameter name="hot_plug_support" value="0" />
+  <parameter name="l01_entry_latency" value="31" />
+  <parameter name="l0_exit_latency_diffclock" value="7" />
+  <parameter name="l0_exit_latency_sameclock" value="7" />
+  <parameter name="l1_exit_latency_diffclock" value="7" />
+  <parameter name="l1_exit_latency_sameclock" value="7" />
+  <parameter name="link_common_clock" value="1" />
+  <parameter name="low_priority_vc" value="0" />
+  <parameter name="max_link_width" value="1" />
+  <parameter name="max_payload_size" value="0" />
+  <parameter name="msi_function_count" value="0" />
+  <parameter name="msix_pba_bir" value="0" />
+  <parameter name="msix_pba_offset" value="0" />
+  <parameter name="msix_table_bir" value="0" />
+  <parameter name="msix_table_offset" value="0" />
+  <parameter name="msix_table_size" value="0" />
+  <parameter name="my_advanced_errors" value="false" />
+  <parameter name="my_enable_ecrc_check" value="false" />
+  <parameter name="my_enable_ecrc_gen" value="false" />
+  <parameter name="my_gen2_lane_rate_mode" value="false" />
+  <parameter name="no_command_completed" value="true" />
+  <parameter name="no_soft_reset" value="false" />
+  <parameter name="p_pcie_app_clk" value="1" />
+  <parameter name="p_pcie_target_performance_preset" value="Maximum" />
+  <parameter name="p_pcie_test_out_width" value="64bits" />
+  <parameter name="p_pcie_txrx_clock" value="100 MHz" />
+  <parameter name="p_pcie_version" value="2.0" />
+  <parameter name="p_user_msi_enable" value="0" />
+  <parameter name="pcie_mode" value="SHARED_MODE" />
+  <parameter name="pcie_qsys" value="1" />
+  <parameter name="port_link_number" value="1" />
+  <parameter name="revision_id" value="1" />
+  <parameter name="sameclock_nfts_count" value="255" />
+  <parameter name="slot_number" value="0" />
+  <parameter name="slot_power_limit" value="0" />
+  <parameter name="slot_power_scale" value="0" />
+  <parameter name="subsystem_device_id" value="4" />
+  <parameter name="subsystem_vendor_id" value="4466" />
+  <parameter name="surprise_down_error_support" value="false" />
+  <parameter name="under_test" value="0" />
+  <parameter name="use_crc_forwarding" value="false" />
+  <parameter name="vendor_id" value="4466" />
+ </module>
+ <module name="pio_0" kind="altera_avalon_pio" version="18.0" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="true" />
+  <parameter name="bitModifyingOutReg" value="true" />
+  <parameter name="captureEdge" value="true" />
+  <parameter name="clockRate" value="62500000" />
+  <parameter name="direction" value="Bidir" />
+  <parameter name="edgeType" value="FALLING" />
+  <parameter name="generateIRQ" value="true" />
+  <parameter name="irqType" value="EDGE" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
+ </module>
+ <connection kind="avalon" version="18.0" start="pcie_ip.bar0" end="pio_0.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pcie_ip.pcie_core_clk"
+   end="pio_0.clk" />
+ <connection
+   kind="interrupt"
+   version="18.0"
+   start="pcie_ip.rxm_irq"
+   end="pio_0.irq">
+  <parameter name="irqNumber" value="0" />
+ </connection>
+ <connection
+   kind="reset"
+   version="18.0"
+   start="pcie_ip.pcie_core_reset"
+   end="pio_0.reset" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="AUTO" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="2" />
+</system>
