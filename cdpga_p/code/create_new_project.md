@@ -45,4 +45,10 @@ Pin Planner:
 
 <img src="img/pin_planner2.png">
 
+Other configurations:
 
+<img src="img/other_3.3v.png">
+
+<img src="img/other_epcs16.png">
+
+<img src="img/other_optimization.png">
