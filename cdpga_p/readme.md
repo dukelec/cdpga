@@ -16,4 +16,4 @@ Connector model: SM20B-SURS-TF (x2 pcs)
 
 ### Software
 
-Minimal example project is coming soon.
+Minimal example project: [code/](./code/)
