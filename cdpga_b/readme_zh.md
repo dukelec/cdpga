@@ -28,6 +28,7 @@ Lattice 器件使用較爲便捷：
 
 
 ## 操作示範
+示範代碼在 [./code/](./code/) 檔案夾下。
 
 ### 建立項目
 下載安裝 Lattice iCEcube2 軟體，然後 File -> New Project 以新建項目：
