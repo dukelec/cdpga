@@ -39,3 +39,10 @@ Note: The vias under BGA are non-conductive filled.
 <img src="img/half-holes-with-pin-headers.jpg" style="max-width:100%">
 
 Details: http://blog.dukelec.com/solder-half-holes-pcb-with-pin-headers
+
+## DIY Small Test Fixture
+
+<img src="img/diy-small-pcb-test-fixture.jpg" style="max-width:100%">
+
+Details: http://blog.dukelec.com/diy-small-pcb-test-fixture
+
