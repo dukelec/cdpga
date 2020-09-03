@@ -4,21 +4,20 @@
 #
 # Copyright (c) 2017 DUKELEC, All rights reserved.
 #
-# Author: Duke Fong <duke@dukelec.com>
+# Author: Duke Fong <d@d-l.io>
 #
 
 import cocotb
 from cocotb.binary import BinaryValue
 from cocotb.triggers import RisingEdge, ReadOnly, Timer
 from cocotb.clock import Clock
-from cocotb.result import ReturnValue, TestFailure
 
 CLK_FREQ = 40000000
 CLK_PERIOD = 1000000000000 / CLK_FREQ
 
 
 @cocotb.test()
-def test_cdpga_bx(dut):
+async def test_cdpga_bx(dut):
     """
     test_cdpga_bx
     """
@@ -26,23 +25,23 @@ def test_cdpga_bx(dut):
     dut.rx = 0
 
     cocotb.fork(Clock(dut.clk, CLK_PERIOD).start())
-    yield Timer(5000000) # wait reset
+    await Timer(5000000) # wait reset
     
     
     dut._log.info("get tx: %d, tx_en: %d" % (dut.tx, dut.tx_en))
     dut._log.info("set rx = 1")
     dut.rx = 1;
     
-    yield Timer(CLK_PERIOD)
+    await Timer(CLK_PERIOD)
     dut._log.info("get tx: %d, tx_en: %d" % (dut.tx, dut.tx_en))
     dut._log.info("set rx = 0")
     dut.rx = 0;
     
-    yield Timer(CLK_PERIOD * 6)
+    await Timer(CLK_PERIOD * 6)
     dut._log.info("get tx: %d, tx_en: %d" % (dut.tx, dut.tx_en))
     dut._log.info("set rx = 1")
     dut.rx = 1;
     
-    yield Timer(5000000)
+    await Timer(5000000)
     dut._log.info("test_cdpga_bx done.")
 

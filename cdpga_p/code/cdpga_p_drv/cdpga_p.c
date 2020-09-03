@@ -4,7 +4,7 @@
  * Copyright (c) 2018, DUKELEC, Inc.
  * All rights reserved.
  *
- * Author: Duke Fong <duke@dukelec.com>
+ * Author: Duke Fong <d@d-l.io>
  */
 
 #define DEBUG

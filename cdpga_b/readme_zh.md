@@ -89,7 +89,7 @@ $ sudo rmmod ftdi_sio
 #### 通過 python 模擬測試
 安裝軟體 `iverilog` (>= v10) 和下載 `cocotb`, 進入 `test_python/` 目錄，通過以下命令即可完成模擬執行：
 ```sh
-$ COCOTB=/path/to/cocotb make
+$ make
 ```
 最後通過 GTKWave 查看輸出的波形檔案：
 <img src="img/e1 cocotb.png" width="100%">
@@ -115,5 +115,5 @@ iCEcube2 中包含的 Active-HDL 模擬工具僅存在於 Windows 版本，具�
 
 除了上面人头板的 CDBITE 免焊接咬合方式：https://github.com/dukelec/cdbus_doc/tree/master/cdbite
 
-还可以直接焊接排针，做成可以插拔的方式：http://blog.dukelec.com/solder-half-holes-pcb-with-pin-headers
+还可以直接焊接排针，做成可以插拔的方式：https://blog.d-l.io/solder-half-holes-pcb-with-pin-headers
 

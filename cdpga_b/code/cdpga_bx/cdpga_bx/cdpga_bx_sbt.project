@@ -4,7 +4,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2017.08.27940 - Bui
 ProjectName=cdpga_bx
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=../cdpga_bx.v,../pll/cdpga_pll.v
+ProjectVFiles=../cdpga_bx.v=work,../pll/cdpga_pll.v=work
 ProjectCFiles=../cdpga.sdc
 CurImplementation=cdpga_bx_Implmnt
 Implementations=cdpga_bx_Implmnt

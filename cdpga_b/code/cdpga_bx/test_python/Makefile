@@ -4,7 +4,7 @@
 #
 # Copyright (c) 2017 DUKELEC, All rights reserved.
 #
-# Author: Duke Fong <duke@dukelec.com>
+# Author: Duke Fong <d@d-l.io>
 #
 
 # Usage:
@@ -17,6 +17,6 @@ VERILOG_SOURCES = $(PWD)/cdpga_bx_wrapper.v \
 
 TOPLEVEL = cdpga_bx_wrapper
 MODULE = test_cdpga_bx
-include $(COCOTB)/makefiles/Makefile.inc
-include $(COCOTB)/makefiles/Makefile.sim
+
+include $(shell cocotb-config --makefiles)/Makefile.sim
 
