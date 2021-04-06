@@ -65,7 +65,7 @@ Lattice 器件使用較爲便捷：
 <img src="img/c4 select mode.png" width="80%">
 <img src="img/c5 programming.png" width="80%">
 
-Notes:  
+#### Notes:
 
 Linux 用家需要把 ftdi_sio driver 屏蔽，否則會把 FT232H 默認識別爲串口：
 ```sh
@@ -79,6 +79,8 @@ The version of previous screenshots was `programmer_3_10_x64-111-2-x86_64-linux`
 
 <img src="img/c6 hack programer.png" max-width="100%">
 
+The last version `diamond-programmer_3_12-240-2-x86_64-linux` has issue for NVCM programming, after processing `NVCM Program, Verigy, Secure`, then check back by `NVCM Read Device Properties`, the `Device Secured` always reported as `OFF`, and the chip will not work at all.  
+Please use old version `programmer_3_10_x64-111-2-x86_64-linux` for NVCM programming so far. (2021.04.07)
 
 #### 配置外部 Flash
 
