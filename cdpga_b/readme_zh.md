@@ -65,12 +65,20 @@ Lattice 器件使用較爲便捷：
 <img src="img/c4 select mode.png" width="80%">
 <img src="img/c5 programming.png" width="80%">
 
+Notes:  
+
 Linux 用家需要把 ftdi_sio driver 屏蔽，否則會把 FT232H 默認識別爲串口：
 ```sh
 $ cd /lib/modules/`uname -r`/kernel/drivers/usb/serial/
 $ sudo mv ftdi_sio.ko ftdi_sio.ko.bk
 $ sudo rmmod ftdi_sio
 ```
+
+The version of previous screenshots was `programmer_3_10_x64-111-2-x86_64-linux`, but the last version `diamond-programmer_3_12-240-2-x86_64-linux` don't support FT232H anymore, we could solve this problem by modify two binary `so` file, change the USB pid string from `6010` to `6014`:  
+(The last version programmer support FT2232H by default, corresponding to the pid `6010`.)
+
+<img src="img/c6 hack programer.png" max-width="100%">
+
 
 #### 配置外部 Flash
 
@@ -101,6 +109,7 @@ $ make
 
 iCEcube2 中包含的 Active-HDL 模擬工具僅存在於 Windows 版本，具體使用方式在新的頁面中查看：[iCEcube2 Simulation](icecube2_sim.md).
 
+更新：最新版本的 iCEcube2 2020.12 默認改用 ModelSim 仿真，此章節日後再更新。
 
 ## 相關資料
  - [原理圖](files/cdctl_bx_sch.pdf)
