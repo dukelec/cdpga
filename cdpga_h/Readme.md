@@ -14,6 +14,7 @@ Note: The vias under BGA are non-conductive filled.
 
  - [cdctl_h3_schematic.pdf](files/cdctl_h3_schematic.pdf)
  - [cdctl_h3_pcb.pdf](files/cdctl_h3_pcb.pdf)
+ - [KiCad library](files/kicad_lib/)
 
 ### Components
 
