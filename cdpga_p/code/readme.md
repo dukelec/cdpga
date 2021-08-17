@@ -14,3 +14,9 @@ we change the value of `direction` register to `0xffff`, then `pio_0_pins` outpu
 ## Firmware overview and creation
 [create_new_project.md](create_new_project.md)
 
+Notes:  
+
+The last available version of Quartus was 18.1, from 19 until the current 20.1, which has problems with pcie compilation.
+
+See: https://community.intel.com/t5/FPGA-Intellectual-Property/Using-Quartus-19-1-and-Platform-Designer-on-Windows-I-get-an/td-p/668852
+
