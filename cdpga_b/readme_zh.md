@@ -92,6 +92,8 @@ Please use old version `programmer_3_10_x64-111-2-x86_64-linux` for NVCM program
 <img src="img/d2.png" width="80%">
 <img src="img/d3.png" width="80%">
 
+iCE40 UL 支持市面上大多數 spi nor flash，如果 flash 型號沒有被此燒錄工具收錄，則需要使用第三方工具進行燒錄。
+
 ### 模擬測試
 你可以使用自己習慣的模擬方式和工具，譬如你可以直接使用 ModelSim, 或者通過 Quartus, ISE 等 IDE 來測試代碼之功能。
 這裡僅給出我偏好的方式和官方提供的方式。
