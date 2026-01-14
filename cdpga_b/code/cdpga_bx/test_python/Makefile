@@ -16,7 +16,7 @@ VERILOG_SOURCES = $(PWD)/cdpga_bx_wrapper.v \
                   $(CDCTL_HDL)/cdpga_bx.v
 
 TOPLEVEL = cdpga_bx_wrapper
-MODULE = test_cdpga_bx
+COCOTB_TEST_MODULES = test_cdpga_bx
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
 

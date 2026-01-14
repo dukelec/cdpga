@@ -8,7 +8,7 @@
 #
 
 import cocotb
-from cocotb.binary import BinaryValue
+from cocotb.types import Logic, LogicArray
 from cocotb.triggers import RisingEdge, ReadOnly, Timer
 from cocotb.clock import Clock
 
@@ -22,25 +22,25 @@ async def test_cdpga_bx(dut):
     test_cdpga_bx
     """
     dut._log.info("test_cdpga_bx start.")
-    dut.rx = 0
+    dut.rx.value = 0
 
-    cocotb.fork(Clock(dut.clk, CLK_PERIOD).start())
+    cocotb.start_soon(Clock(dut.clk, CLK_PERIOD).start())
     await Timer(5000000) # wait reset
     
     
-    dut._log.info("get tx: %d, tx_en: %d" % (dut.tx, dut.tx_en))
+    dut._log.info(f"get tx: {int(dut.tx.value)}, tx_en: {int(dut.tx_en.value)}")
     dut._log.info("set rx = 1")
-    dut.rx = 1;
+    dut.rx.value = 1;
     
     await Timer(CLK_PERIOD)
-    dut._log.info("get tx: %d, tx_en: %d" % (dut.tx, dut.tx_en))
+    dut._log.info(f"get tx: {int(dut.tx.value)}, tx_en: {int(dut.tx_en.value)}")
     dut._log.info("set rx = 0")
-    dut.rx = 0;
+    dut.rx.value = 0;
     
     await Timer(CLK_PERIOD * 6)
-    dut._log.info("get tx: %d, tx_en: %d" % (dut.tx, dut.tx_en))
+    dut._log.info(f"get tx: {int(dut.tx.value)}, tx_en: {int(dut.tx_en.value)}")
     dut._log.info("set rx = 1")
-    dut.rx = 1;
+    dut.rx.value = 1;
     
     await Timer(5000000)
     dut._log.info("test_cdpga_bx done.")
